@@ -25,6 +25,7 @@ export const postEstudiantes = async () => {
   console.log(result.rows);
   return result;
 };
+
 /* Actualizar */
 export const putEstudiantes = async () => {
   const text = "UPDATE Estudiantes SET curso = $1 WHERE id = $2 RETURNING *";

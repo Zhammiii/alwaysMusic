@@ -4,6 +4,10 @@ export const app = express();
 export const PORT = 3000;
 
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+
 /* leer algo */
 
 app.get("/estudiantes", async (req, res) => {
