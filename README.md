@@ -23,7 +23,7 @@ Paso 4
 Paso 5
 <!-- npm start -->
 
-# IMPORATANTE, REVISA LOS PUERTOS QUE UTILIZAS. PUEDEN CAMBIAR
+# IMPORTANTE, REVISA LOS PUERTOS QUE UTILIZAS. PUEDEN CAMBIAR
 
 Rutas que puededes ejecutar 
 Desde el archivo dbControllers puedes cambiar los values. 
