@@ -5,7 +5,7 @@ const config = {
   user: "postgres",
   host: "localhost",
   database: "always Music",
-  password: "aqui va tu clave",
+  password: "2088",
   port: 5432,
 };
 export const pool = new Pool(config);

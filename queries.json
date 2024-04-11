@@ -1,0 +1,26 @@
+{
+  "getEstudiantes": {
+    "text": "SELECT * FROM Estudiantes",
+    "rowMode": "array"
+  },
+  "getEstudiantesRut": {
+    "text": "SELECT nombre FROM Estudiantes WHERE rut = $1",
+    "values": ["18.xxx.xxx-4"],
+    "rowMode": "array"
+  },
+  "postEstudiantes": {
+    "text": "INSERT INTO Estudiantes (nombre, rut, curso, nivel) VALUES ($1, $2, $3, $4) RETURNING *",
+    "values": ["Luis", "18.xxx.xxx-5", "FullStack JS", 7],
+    "rowMode": "array"
+  },
+  "putEstudiantes": {
+    "text": "UPDATE Estudiantes SET curso = $1 WHERE id = $2 RETURNING *",
+    "values": ["FullStack JS", 1],
+    "rowMode": "array"
+  },
+  "deleteEstudiantes": {
+    "text": "DELETE FROM Estudiantes WHERE id = $1 RETURNING *",
+    "values": [2],
+    "rowMode": "array"
+  }
+}
